@@ -19,7 +19,7 @@ int main()
 	std::ofstream ofile("out.txt");
 	if (ofile.is_open()) {
 		ofile << size << std::endl;
-		for (int i = 0; i < size; i++) {
+		for (int i = (size - 1); i >= 0; i--) {
 			ofile << arr[i] << " ";
 		}
 	}
